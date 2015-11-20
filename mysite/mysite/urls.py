@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from views import hello
+from views import hello, about
 
 blog_urls = [
     url(r'^', include('zinnia.urls.capabilities')),
@@ -37,5 +37,7 @@ blog_urls = [
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/', hello),
+#    url(r'^about/', 'Registry.views.about', name='about'),
+    url(r'^about/', about),
     url(r'^', include(blog_urls, namespace='zinnia')),
 ]

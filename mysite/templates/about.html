@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}About WorldViews{% endblock %}
+{% block navtitle %}WorldViews{% endblock %}
+{% block jsext %}
+
+<link rel="stylesheet" href="{% static "css/grid.css" %}" type="text/css" />
+<script src="/static/js/WVR.js"></script>
+<script type="text/javascript">
+</script>
+
+<style type="text/css">
+</style>
+
+{% endblock %}
+{% block content %}
+
+<div class="span pull-right" style="text-align:right">
+   <img src="{% static "img/blue-marble.png" %}" width="200" height="200">
+</div>
+
+<h2>Mission</h2>
+This is Enock's misson.  What is it?  Maybe to live fully, have many great adventures
+and share those adventures with others?  Who knows.  Only Enock knows for sure!
+
+&nbsp;<p>
+
+{% endblock %}
