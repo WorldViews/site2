@@ -19,7 +19,7 @@ from views import hello, about
 
 blog_urls = [
     url(r'^', include('zinnia.urls.capabilities')),
-    url(r'^search/', include('zinnia.urls.search')),
+    url(r'^search/',  include('zinnia.urls.search')),
     url(r'^sitemap/', include('zinnia.urls.sitemap')),
     url(r'^trackback/', include('zinnia.urls.trackback')),
     url(r'^blog/tags/', include('zinnia.urls.tags')),
@@ -35,7 +35,9 @@ blog_urls = [
 ]
 
 urlpatterns = [
+    url(r'^/', hello),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^hello', hello),
     url(r'^hello/', hello),
 #    url(r'^about/', 'Registry.views.about', name='about'),
     url(r'^about/', about),
