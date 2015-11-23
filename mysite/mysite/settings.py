@@ -56,7 +56,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-print "***** BASE_DIR:", BASE_DIR
+# print "***** BASE_DIR:", BASE_DIR
 
 ROOT_URLCONF = 'mysite.urls'
 
